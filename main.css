@@ -1,19 +1,167 @@
+
+a.font
+	{ 
+	  font-family: Arial;
+	}
+ 
+/* remove a linha dos links */
+a
+	{
+	  text-decoration: none;
+	}
+ 
+/* esconde as ancoras da tela */
+a.links
+	{
+	  display: none;
+	}
+
+.content
+	{
+	  width: 500px;
+	  min-height: 560px;    
+	  margin: 0px auto;
+	  position: relative;   
+	}
+
+h1 /*Titulos tipo h1*/
+{
+  font-size: 25px;
+  color: #000000;
+  padding: 0px  0px 0;
+  font-family: Arial;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 0px;
+}	
+h2:after
+	{
+	  content: '';
+	  display: block;
+	  width: 15%;
+	  height: 2px;
+	  margin-top: 1px;
+	  background: -webkit-linear-gradient(left, #2E2E2E 0%, #2E2E2E 20%, #2E2E2E 53%, #2E2E2E 79%, #2E2E2E 100%); 
+	  background: linear-gradient(left, #2E2E2E 0%, #2E2E2E 20%, #2E2E2E 53%, #2E2E2E 79%, #2E2E2E 100%); 
+	  align-content: : center;
+	}
+
+h2 /*Titulos tipo h2*/
+{
+  font-size: 20px;
+  color: #000000;
+  padding: 0;
+  font-family: Arial;
+  text-align: left;
+}	
+
+p
+	{
+	  margin-bottom: 15px;
+	}
+ 
+.content p:first-child
+	{
+	  margin: 0px;
+	}
+label
+	{
+	  color: #000000;
+	}
+
+input 
+	{
+	  outline: none;
+	}
+ 
+/*estilo dos input,  menos o radio */
+input:not([type="radio"])
+	{
+	  width: 15%;
+	  margin-top: 0px;
+	  padding: 3px;    
+	  border: 1px solid #000000;
+	 
+	  -webkit-border-radius: 1px;
+	  border-radius: 1px;
+	 
+	  -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	  box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	 
+	  -webkit-transition: all 0.2s linear;
+	  transition: all 0.2s linear;
+	}
+ 
+/*estilo do botão submit e reset */
+input[type="submit"]
+	{
+	  width: 10%!important;
+	  cursor: pointer;  
+	  background: #6E6E6E;
+	  padding: 8px 5px;
+	  color: #fff;
+	  font-size: 20px;  
+	  border: 1px solid #fff;   
+	  margin-bottom: 10px;  
+	  text-shadow: 0 1px 1px #333;
+	 
+	  -webkit-border-radius: 0px;
+	  border-radius: 0px;
+	 
+	  transition: all 0.2s linear;
+	}
+
+input[type="reset"]
+	{
+	  width: 10%!important;
+	  cursor: pointer;  
+	  background: #6E6E6E;
+	  padding: 8px 5px;
+	  color: #fff;
+	  font-size: 20px;  
+	  border: 1px solid #fff;   
+	  margin-bottom: 10px;  
+	  text-shadow: 0 1px 1px #333;
+	 
+	  -webkit-border-radius: 0px;
+	  border-radius: 0px;
+	 
+	  transition: all 0.2s linear;
+	}	
+
+/*estilo do botão submit no hover */
+input[type="submit"]:hover
+	{
+	  background: #2E2E2E;
+	}
+input[type="reset"]:hover
+	{
+	  background: #2E2E2E;
+	}
+
+/*roda pé*/
 body
 {
   font-size: 15px;
   color: #000000;
-  padding: 0;
+  padding: 0px  0px 0;
   font-family: Arial;
-  text-align: center;
-}
-
-h2:after
+  font-weight: italic;
+  text-align: left;
+}	
+textarea
 	{
-	  content: ' ';
-	  display: block;
-	  width: 100%;
-	  height: 1px;
+	  width: 15%;
 	  margin-top: 0px;
-	  background: -webkit-linear-gradient(left, #2E2E2E 0%, #2E2E2E 20%, #2E2E2E 53%, #2E2E2E 79%, #2E2E2E 100%); 
-	  background: linear-gradient(left, #2E2E2E 0%, #2E2E2E 20%, #2E2E2E 53%, #2E2E2E 79%, #2E2E2E 100%); 
+	  padding: 3px;    
+	  border: 1px solid #000000;
+	 
+	  -webkit-border-radius: 1px;
+	  border-radius: 1px;
+	 
+	  -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	  box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	 
+	  -webkit-transition: all 0.2s linear;
+	  transition: all 0.2s linear;
 	}
